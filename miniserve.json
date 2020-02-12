@@ -1,0 +1,30 @@
+{
+    "path": "build",
+    "automations": [
+        {
+            "type": "less",
+            "minify": true,
+            "tagName": "css",
+            "sourceFiles": [
+                "source/less/app.less"
+            ]
+        },
+        {
+            "type": "js",
+            "minify": true,
+            "tagName": "js",
+            "sourceFiles": [
+                "source/js/app.js"
+            ]
+        },
+        {
+            "type": "html",
+            "minify": true,
+            "parseTags": true,
+            "sourceFiles": [
+                "source/html/app.html"
+            ],
+            "destFile": "build/index.html"
+        }
+    ]
+}

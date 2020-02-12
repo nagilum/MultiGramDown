@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f23;
+    color: #efeff1;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    &#form {
+        padding: 35vh 0 50px;
+        transition: .25s;
+
+        div {
+            margin: auto;
+            width: 400px;
+            
+            h1 {
+                font-size: 50px;
+                margin: 0;
+                padding: 0;
+                transition: .25s;
+
+                a {
+                    color: #efeff1;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+    
+            label {
+                cursor: pointer;
+                display: block;
+            }
+    
+            input[type=text] {
+                background-color: #ffffff26;
+                border: none;
+                border-radius: 5px;
+                color: #efeff1;
+                margin: 0 4px 0 0;
+                padding: 15px 10px;
+                width: 300px;
+            }
+    
+            button {
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 0;
+                padding: 15px 10px;
+                width: 90px;
+            }
+
+            @media screen and (max-width: 400px) {
+                padding: 0 1%;
+                width: 100%;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                input[type=text] {
+                    margin: 0;
+                    width: 75%;
+                }
+
+                button {
+                    width: 24%;
+                }
+            }
+        }
+
+        &.loaded {
+            padding-bottom: 10px;
+            padding-top: 5px;
+
+            div {
+                h1 {
+                    font-size: 30px;
+                }
+
+                input[type=text] {
+                    padding: 10px 10px;
+                }
+
+                button {
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+
+    &#images {
+        text-align: center;
+
+        a {
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            height: 255px;
+            padding: 216px 0 0 0;
+            transition: .25s;
+            text-decoration: none;
+            width: 255px;
+
+            span {
+                background-color: #00000076;
+                color: #efeff1;
+                display: block;
+                height: 40px;
+                padding-top: 10px;
+                transition: .25s;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            &:hover {
+                span {
+                    opacity: .20;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+        }
+    }
+}
